@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>데이터분석 &amp; 딥러닝 에 관한 얘기들을 올려놓습니다</description>
+    <link>
+    https://Wasabiijelly.github.io</link>
+    
+      
+      <item>
+        <title>Deep Learning 이론(1) - 수치 미분</title>
+        
+          <description>&lt;p&gt;이 글은 deeplearning tag test 글입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 22 Jan 2022 17:37:00 +0900</pubDate>
+        <link>
+        https://Wasabiijelly.github.io/deeplearning-basic</link>
+        <guid isPermaLink="true">https://Wasabiijelly.github.io/deeplearning-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Gettysburg Address</title>
+        
+          <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 19 Nov 1863 19:18:00 +0900</pubDate>
+        <link>
+        https://Wasabiijelly.github.io/gettysburg-address</link>
+        <guid isPermaLink="true">https://Wasabiijelly.github.io/gettysburg-address</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Probability &amp; Statistics 이론(1) - 사건과 확률</title>
+        
+          <description>&lt;p&gt;이 글은 probAndStat tag test 글입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 23 Jan 1863 02:37:00 +0900</pubDate>
+        <link>
+        https://Wasabiijelly.github.io/probAndStat-basic</link>
+        <guid isPermaLink="true">https://Wasabiijelly.github.io/probAndStat-basic</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
