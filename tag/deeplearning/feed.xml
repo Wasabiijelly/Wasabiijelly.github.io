@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://wasabiijelly.github.io/tag/deeplearning/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://wasabiijelly.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-02-22T10:03:12+09:00</updated>
+  <updated>2022-02-23T22:00:06+09:00</updated>
   <id>https://wasabiijelly.github.io/tag/deeplearning/feed.xml</id>
 
   
@@ -32,8 +32,85 @@
 
   
     <entry>
-      <title type="html">Deep Learning 이론(1) - 수치 미분</title>
-      <link href="https://wasabiijelly.github.io/deeplearning-basic" rel="alternate" type="text/html" title="Deep Learning 이론(1) - 수치 미분" />
+      <title type="html">Linear Regression-basic</title>
+      <link href="https://wasabiijelly.github.io/deeplearning-LR" rel="alternate" type="text/html" title="Linear Regression-basic" />
+      <published>2022-01-23T20:25:00+09:00</published>
+      <updated>2022-01-23T20:25:00+09:00</updated>
+      <id>https://wasabiijelly.github.io/deeplearning-LR</id>
+      <content type="html" xml:base="https://wasabiijelly.github.io/deeplearning-LR">&lt;h1 id=&quot;linear-regression-선형-회귀-분석&quot;&gt;Linear Regression (선형 회귀 분석)&lt;/h1&gt;
+
+&lt;h3 id=&quot;목차&quot;&gt;[목차]&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;선형 회귀 모델의 정의&lt;/li&gt;
+  &lt;li&gt;선형 회귀 모델에서의 변수 종류&lt;/li&gt;
+  &lt;li&gt;선형 회귀 모델의 종류&lt;/li&gt;
+  &lt;li&gt;선형 회귀 모델에서의 리니어 방정식&lt;/li&gt;
+  &lt;li&gt;선형 회귀 모델에서의 모집단과 표본집단&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;1-선형-회귀-모델의-정의&quot;&gt;1. 선형 회귀 모델의 정의&lt;/h4&gt;
+&lt;p&gt;우선 ‘모델’이란 무엇일까? 쉽게 ‘모델’을 떠올려 보자. 일반적으로 인간을 대표해서 옷을 걸치고 런웨이를 하는 모델을 떠올릴 수 있다. 자동차 모델, 노트북 모델, 등등 모델이라 함은 그 대상을 &lt;strong&gt;대표&lt;/strong&gt;하는 것이다. &lt;br /&gt;
+여기서 유추할 수 있듯이 회귀 모델에서의 모델 또한 데이터를 대표할 수 있는 모델을 만드는 것이다. 이 모델을 통해 데이터의 경향성을 파악하기도 하고 예측하기도 한다. 그래서 우리는 모델링을 하려 하는 것이다.&lt;/p&gt;
+
+&lt;h6 id=&quot;그렇다면-선형-회귀-모델은-무엇일까&quot;&gt;그렇다면, 선형 회귀 모델은 무엇일까?&lt;/h6&gt;
+&lt;p&gt;간단히 말하면, 데이터를 잘 나타내는(대표하는) 선을 만들어 y값(우리가 관심있는 변수)을 분석하고자 하는 모델링 기술이다.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-선형-회귀-모델에서의-변수-종류&quot;&gt;2. 선형 회귀 모델에서의 변수 종류&lt;/h4&gt;
+&lt;p&gt;앞서 말했듯이, ‘선’을 만들기 위해서 방정식을 사용한다. 우리가 알고있는 일차 방정식인 y=ax+b를 떠올리면 이해하기 쉽다. 여기서 용어 정리!!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;종속변수(y)&lt;/strong&gt;
+-관심있는 특정 현상을 나타내는 변수(ex)주식의 순수익, 고객들의 방문 수)
+-동의어: 반응변수(response variable), 결과 변수(outcome variable)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;독립변수(x)&lt;/strong&gt;
+-종속변수(y)에 영향을 끼칠 수 있는 변수(ex) 기업의 매출, 고객의 가족 수)
+-동의어: 설명변수(explanatory variable), 예측변수(predictor)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이때, 주의해야 할 점은 독립 변수(x)는 &lt;strong&gt;수치형 변수 또는 범주형 변수&lt;/strong&gt;여야 하고 종속변수(y)는 &lt;strong&gt;연속형 수치변수&lt;/strong&gt;여야 한다는 점이다.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-선형-회귀-모델의-종류&quot;&gt;3. 선형 회귀 모델의 종류&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;assets/built/images/LinearRegression/LRcategory.png&quot; alt=&quot;Linear Regression Category&quot; title=&quot;optional title&quot; /&gt;
+위의 표와 같이 &lt;strong&gt;독립변수의 갯수&lt;/strong&gt;로 선형 회귀 모델의 종류가 나뉜다.&lt;/p&gt;
+
+&lt;h4 id=&quot;4-선형-회귀-모델에서의-리니어-방정식&quot;&gt;4. 선형 회귀 모델에서의 리니어 방정식&lt;/h4&gt;
+
+&lt;h4 id=&quot;5-선형-회귀-모델에서의-모집단과-표본집단&quot;&gt;5. 선형 회귀 모델에서의 모집단과 표본집단&lt;/h4&gt;
+&lt;p&gt;선형 회귀 모델링의 목적은 데이터(x1,x2,x3..xk)로 y를 예측하는 선형 모델을 만든다는 것이다. 이때, 선은 어떻게 그릴까? 선이 데이터를 잘 &lt;strong&gt;대표&lt;/strong&gt;한다는 것의 의미는 무엇일까? 이에 관하여 다음 포스팅에서 LSE(Least Square Estimation)와 함께 설명하겠다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hyeyoon</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="deeplearning" />
+      
+
+      
+        <summary type="html">Linear Regression (선형 회귀 분석)</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Deep Learning 이론</title>
+      <link href="https://wasabiijelly.github.io/deeplearning-basic" rel="alternate" type="text/html" title="Deep Learning 이론" />
       <published>2022-01-22T17:37:00+09:00</published>
       <updated>2022-01-22T17:37:00+09:00</updated>
       <id>https://wasabiijelly.github.io/deeplearning-basic</id>

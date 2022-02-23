@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://wasabiijelly.github.io/tag/story/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://wasabiijelly.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-02-23T22:00:06+09:00</updated>
+  <id>https://wasabiijelly.github.io/tag/story/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Data Analysis &amp;amp; Deep Learning | </title>
+  
+
+  
+    <subtitle>데이터분석 &amp; 딥러닝 에 관한 얘기들을 올려놓습니다</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">이야기</title>
+      <link href="https://wasabiijelly.github.io/dataAnalysis_basic" rel="alternate" type="text/html" title="이야기" />
+      <published>2022-01-22T11:37:00+09:00</published>
+      <updated>2022-01-22T11:37:00+09:00</updated>
+      <id>https://wasabiijelly.github.io/dataAnalysis_basic</id>
+      <content type="html" xml:base="https://wasabiijelly.github.io/dataAnalysis_basic">&lt;h2 id=&quot;이-글은-story-tag-test-글입니다&quot;&gt;이 글은 story tag test 글입니다.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;George Washington&lt;/li&gt;
+  &lt;li&gt;John Adams&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Kim Hyeyoon&lt;/li&gt;
+  &lt;li&gt;Kim Jiyoon&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;[x] 블로그 완료
+[ ] 사실 안완료&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hyeyoon</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="story" />
+      
+
+      
+        <summary type="html">이 글은 story tag test 글입니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
