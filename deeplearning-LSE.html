@@ -11,7 +11,7 @@
 
 
 
-    <title>Gettysburg Address</title>
+    <title>Linear Regression & Least Square Estimation(최소자승법)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -39,27 +39,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="데이터분석 & 딥러닝 에 관한 얘기들을 올려놓습니다" />
     <link rel="shortcut icon" href="/assets/built/images/purple_favicon.png" type="image/png"/>
-    <link rel="canonical" href="https://Wasabiijelly.github.io/gettysburg-address" />
+    <link rel="canonical" href="https://Wasabiijelly.github.io/deeplearning-LSE" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Data Analysis & Deep Learning" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Gettysburg Address" />
-    <meta property="og:description" content="Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated," />
-    <meta property="og:url" content="https://Wasabiijelly.github.io/gettysburg-address" />
-    <meta property="og:image" content="https://Wasabiijelly.github.io/assets/built/images/sky.jpg" />
+    <meta property="og:title" content="Linear Regression & Least Square Estimation(최소자승법)" />
+    <meta property="og:description" content="1. Least Square Estimation이란? Linear Regression 모델을 만든다는 것은 데이터를 잘 설명하는 선을 만드는 것이라고 앞선 포스팅에서 말하였다. 그렇다면 아래 그림의 A, B, C 에서 어던 선이 데이터를 잘 설명하는 것일까? 인간으로 봤을 때, 당연히 B라고 할 수 있다. 하지만, 컴퓨터의 입장에서 데이터를 잘 설명 한다는 기준은 어떻게 만드는 걸까?" />
+    <meta property="og:url" content="https://Wasabiijelly.github.io/deeplearning-LSE" />
+    <meta property="og:image" content="https://Wasabiijelly.github.io/assets/built/images/LinearRegression/cover_lse.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="1863-11-19T19:18:00+09:00" />
-    <meta property="article:modified_time" content="1863-11-19T19:18:00+09:00" />
+    <meta property="article:published_time" content="2022-02-26T15:02:00+09:00" />
+    <meta property="article:modified_time" content="2022-02-26T15:02:00+09:00" />
+    <meta property="article:tag" content="Deeplearning" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Gettysburg Address" />
-    <meta name="twitter:description" content="Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated," />
+    <meta name="twitter:title" content="Linear Regression & Least Square Estimation(최소자승법)" />
+    <meta name="twitter:description" content="1. Least Square Estimation이란? Linear Regression 모델을 만든다는 것은 데이터를 잘 설명하는 선을 만드는 것이라고 앞선 포스팅에서 말하였다. 그렇다면 아래 그림의 A, B, C 에서 어던 선이 데이터를 잘 설명하는 것일까? 인간으로 봤을 때, 당연히 B라고 할 수 있다. 하지만, 컴퓨터의 입장에서 데이터를 잘 설명 한다는 기준은 어떻게 만드는 걸까?" />
     <meta name="twitter:url" content="https://Wasabiijelly.github.io/" />
-    <meta name="twitter:image" content="https://Wasabiijelly.github.io/assets/built/images/sky.jpg" />
+    <meta name="twitter:image" content="https://Wasabiijelly.github.io/assets/built/images/LinearRegression/cover_lse.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Data Analysis & Deep Learning" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Deeplearning" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -74,18 +77,18 @@
         "name": "Data Analysis & Deep Learning",
         "logo": "https://Wasabiijelly.github.io/"
     },
-    "url": "https://Wasabiijelly.github.io/gettysburg-address",
+    "url": "https://Wasabiijelly.github.io/deeplearning-LSE",
     "image": {
         "@type": "ImageObject",
-        "url": "https://Wasabiijelly.github.io/assets/built/images/sky.jpg",
+        "url": "https://Wasabiijelly.github.io/assets/built/images/LinearRegression/cover_lse.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://Wasabiijelly.github.io/gettysburg-address"
+        "@id": "https://Wasabiijelly.github.io/deeplearning-LSE"
     },
-    "description": "Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated,"
+    "description": "1. Least Square Estimation이란? Linear Regression 모델을 만든다는 것은 데이터를 잘 설명하는 선을 만드는 것이라고 앞선 포스팅에서 말하였다. 그렇다면 아래 그림의 A, B, C 에서 어던 선이 데이터를 잘 설명하는 것일까? 인간으로 봤을 때, 당연히 B라고 할 수 있다. 하지만, 컴퓨터의 입장에서 데이터를 잘 설명 한다는 기준은 어떻게 만드는 걸까?"
 }
     </script>
 
@@ -98,7 +101,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Gettysburg Address" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Linear Regression & Least Square Estimation(최소자승법)" href="/feed.xml" />
 
 
 </head>
@@ -158,29 +161,47 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full   ">
+        <article class="post-full  tag-deeplearning post tag-deeplearning ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="19 November 1863">19 November 1863</time>
+                    <time class="post-full-meta-date" datetime="26 February 2022">26 February 2022</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/deeplearning/'>DEEPLEARNING</a>
+                            
+                        
                     
                 </section>
-                <h1 class="post-full-title">Gettysburg Address</h1>
+                <h1 class="post-full-title">Linear Regression & Least Square Estimation(최소자승법)</h1>
             </header>
 
             <!-- remarked by hyeyoon
             
-            <figure class="post-full-image" style="background-image: url(/assets/built/images/sky.jpg)">
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/LinearRegression/cover_lse.png)">
             </figure>
             
             -->
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</p>
-
-<p>Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.</p>
-
-<p>But, in a larger sense, we can not dedicate-we can not consecrate-we can not hallow-this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us-that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion-that we here highly resolve that these dead shall not have died in vain-that this nation, under God, shall have a new birth of freedom-and that government of the people, by the people, for the people shall not perish from the earth.</p>
+                    <h4 id="1-least-square-estimation이란">1. Least Square Estimation이란?</h4>
+<p><br />
+Linear Regression 모델을 만든다는 것은 데이터를 잘 설명하는 선을 만드는 것이라고 앞선 포스팅에서 말하였다. 그렇다면 아래 그림의 A, B, C 에서 어던 선이 데이터를 잘 설명하는 것일까? <br />
+<img src="assets/built/images/LinearRegression/lse1.png" alt="LSE" title="optional title" />
+인간으로 봤을 때, 당연히 B라고 할 수 있다. 하지만, 컴퓨터의 입장에서 데이터를 잘 <strong>설명</strong> 한다는 기준은 어떻게 만드는 걸까? 이 때 <strong>Least Square Estimation(LSE)</strong> 개념이 나온다. <br />
+직역하자면 ‘<strong>최소 제곱법</strong>‘인데, 무엇이 최소 제곱이라는 것일까?<br />
+<img src="assets/built/images/LinearRegression/lse2.png" alt="LSE" title="optional title" />
+위의 그림에서 <strong>빨간 선(Residual)을 제곱한 값이 최소인 직선</strong>을 데이터를 제일 잘 설명하는 직선이라고 한다. 다시 말해, <strong>관측값(데이터)과 예측값(직선 위의 값) 차이의 제곱값을 최소화</strong>하는 파라미터 (B0, B1)을 추정하는 방법을 Least Square Estimation이라고 한다.</p>
+<h4 id="2-lse가-최선일까">2. LSE가 최선일까?</h4>
+<p><br />
+이 때, LSE로 추정한 직선 말고 <strong>다른 방법</strong>으로 직선을 추정할 수 있지 않을까? 하는 의문이 들 수 있다. 하지만, 앞 포스팅에서 말한 4가지 가정(<strong>선형성, 등분산성, 정규성, 독립성</strong>)을 만족하는 데이터라면 가우스-마코브 이론(Gauss Marcov Theorem)에 의해 BLUE(Best Linear Unbiased Estimator)이라 할 수 있다. 쉽게 말해 가정만 지켜진다면 <strong>LSE로 추정하는 직선이 데이터를 최적으로 설명할 수 있는 직선</strong>이라는 의미이다.</p>
+<h4 id="3-lse의-계산">3. LSE의 계산</h4>
+<p><br />
+LSE로 최적의 직선을 만드는 B0, B1 값을 알아낼 수 있다는 것을 알았다. LSE를 이용한 B0, B1의 추정값은 다음과 같다.
+<img src="assets/built/images/LinearRegression/estimatingb.jpg" alt="LSE" title="optional title" />
+여기서 B1의 값은 최종적으로 (x,y의 공분산)/(x의 분산)이 됨을 알 수 있다. 위 식의 유도과정은 다음 포스팅에서 하겠다.</p>
 
                 </div>
             </section>
@@ -236,9 +257,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'https://Wasabiijelly.github.io/gettysburg-address';
-                            var this_page_identifier = '/gettysburg-address';
-                            var this_page_title = 'Gettysburg Address';
+                            var this_page_url = 'https://Wasabiijelly.github.io/deeplearning-LSE';
+                            var this_page_identifier = '/deeplearning-LSE';
+                            var this_page_title = 'Linear Regression & Least Square Estimation(최소자승법)';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -260,6 +281,71 @@ into the {body} of the default.hbs template -->
     <div class="inner">
         <div class="read-next-feed">
             
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/built/images/blog_cover_purple.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Data Analysis & Deep Learning &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/deeplearning/">Deeplearning</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/deeplearning-estimatingb">Estimating beta in Simple Linear Regression(단순선형회귀 베타 추정)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/deeplearning-LR">Linear Regression-basic</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/deeplearning/">
+                                
+                                    See all 2 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -267,27 +353,28 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/dataAnalysis_basic">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/water.jpg)"></div>
+            <a class="post-card-image-link" href="/deeplearning-estimatingb">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/LinearRegression/cover_estimatingb.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/dataAnalysis_basic">
+            <a class="post-card-content-link" href="/deeplearning-estimatingb">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Story</span>
+                                <span class="post-card-tags">Deeplearning</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">이야기</h2>
+                    <h2 class="post-card-title">Estimating beta in Simple Linear Regression(단순선형회귀 베타 추정)</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>이 글은 story tag test 글입니다.
+                        <p>앞선 포스팅에서 LSE와 이를 통한 B0, B1의 계산 공식을 설명하였다.
 
+위 식의 유도 과정은 아래와 같다.
 </p>
                     
                 </section>
@@ -321,26 +408,33 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/probAndStat-basic">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/sky.jpg)"></div>
+            <a class="post-card-image-link" href="/deeplearning-LR">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/LinearRegression/cover_lr.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/probAndStat-basic">
+            <a class="post-card-content-link" href="/deeplearning-LR">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Probability-and-statistics</span>
+                                <span class="post-card-tags">Deeplearning</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Probability & Statistics 이론(1) - 사건과 확률</h2>
+                    <h2 class="post-card-title">Linear Regression-basic</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>이 글은 probAndStat tag test 글입니다.
+                        <p>Python 강좌는 여러 절로 구성되어 있습니다. 
+
+    ML 강좌(1) - LR 기본
+    ML 강좌(2) - LSE 제어문
+
+
+Linear Regression (선형 회귀 분석)
+
 </p>
                     
                 </section>
@@ -381,18 +475,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Gettysburg Address</div>
+    <div class="floating-header-title">Linear Regression & Least Square Estimation(최소자승법)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Gettysburg+Address&amp;url=https://Wasabiijelly.github.iogettysburg-address"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Linear+Regression+%26+Least+Square+Estimation%28%EC%B5%9C%EC%86%8C%EC%9E%90%EC%8A%B9%EB%B2%95%29&amp;url=https://Wasabiijelly.github.iodeeplearning-LSE"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://Wasabiijelly.github.iogettysburg-address"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://Wasabiijelly.github.iodeeplearning-LSE"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

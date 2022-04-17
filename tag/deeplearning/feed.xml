@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://wasabiijelly.github.io/tag/deeplearning/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://wasabiijelly.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-02-24T10:33:11+09:00</updated>
+  <updated>2022-04-18T01:23:57+09:00</updated>
   <id>https://wasabiijelly.github.io/tag/deeplearning/feed.xml</id>
 
   
@@ -32,12 +32,103 @@
 
   
     <entry>
+      <title type="html">Estimating beta in Simple Linear Regression(단순선형회귀 베타 추정)</title>
+      <link href="https://wasabiijelly.github.io/deeplearning-estimatingb" rel="alternate" type="text/html" title="Estimating beta in Simple Linear Regression(단순선형회귀 베타 추정)" />
+      <published>2022-02-26T18:33:00+09:00</published>
+      <updated>2022-02-26T18:33:00+09:00</updated>
+      <id>https://wasabiijelly.github.io/deeplearning-estimatingb</id>
+      <content type="html" xml:base="https://wasabiijelly.github.io/deeplearning-estimatingb">&lt;p&gt;앞선 포스팅에서 LSE와 이를 통한 B0, B1의 계산 공식을 설명하였다.&lt;br /&gt;
+&lt;img src=&quot;assets/built/images/LinearRegression/estimatingb.jpg&quot; alt=&quot;LSE&quot; title=&quot;optional title&quot; /&gt;
+위 식의 유도 과정은 아래와 같다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hyeyoon</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="deeplearning" />
+      
+
+      
+        <summary type="html">앞선 포스팅에서 LSE와 이를 통한 B0, B1의 계산 공식을 설명하였다. 위 식의 유도 과정은 아래와 같다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Linear Regression &amp;amp; Least Square Estimation(최소자승법)</title>
+      <link href="https://wasabiijelly.github.io/deeplearning-LSE" rel="alternate" type="text/html" title="Linear Regression &amp; Least Square Estimation(최소자승법)" />
+      <published>2022-02-26T15:02:00+09:00</published>
+      <updated>2022-02-26T15:02:00+09:00</updated>
+      <id>https://wasabiijelly.github.io/deeplearning-LSE</id>
+      <content type="html" xml:base="https://wasabiijelly.github.io/deeplearning-LSE">&lt;h4 id=&quot;1-least-square-estimation이란&quot;&gt;1. Least Square Estimation이란?&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;
+Linear Regression 모델을 만든다는 것은 데이터를 잘 설명하는 선을 만드는 것이라고 앞선 포스팅에서 말하였다. 그렇다면 아래 그림의 A, B, C 에서 어던 선이 데이터를 잘 설명하는 것일까? &lt;br /&gt;
+&lt;img src=&quot;assets/built/images/LinearRegression/lse1.png&quot; alt=&quot;LSE&quot; title=&quot;optional title&quot; /&gt;
+인간으로 봤을 때, 당연히 B라고 할 수 있다. 하지만, 컴퓨터의 입장에서 데이터를 잘 &lt;strong&gt;설명&lt;/strong&gt; 한다는 기준은 어떻게 만드는 걸까? 이 때 &lt;strong&gt;Least Square Estimation(LSE)&lt;/strong&gt; 개념이 나온다. &lt;br /&gt;
+직역하자면 ‘&lt;strong&gt;최소 제곱법&lt;/strong&gt;‘인데, 무엇이 최소 제곱이라는 것일까?&lt;br /&gt;
+&lt;img src=&quot;assets/built/images/LinearRegression/lse2.png&quot; alt=&quot;LSE&quot; title=&quot;optional title&quot; /&gt;
+위의 그림에서 &lt;strong&gt;빨간 선(Residual)을 제곱한 값이 최소인 직선&lt;/strong&gt;을 데이터를 제일 잘 설명하는 직선이라고 한다. 다시 말해, &lt;strong&gt;관측값(데이터)과 예측값(직선 위의 값) 차이의 제곱값을 최소화&lt;/strong&gt;하는 파라미터 (B0, B1)을 추정하는 방법을 Least Square Estimation이라고 한다.&lt;/p&gt;
+&lt;h4 id=&quot;2-lse가-최선일까&quot;&gt;2. LSE가 최선일까?&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;
+이 때, LSE로 추정한 직선 말고 &lt;strong&gt;다른 방법&lt;/strong&gt;으로 직선을 추정할 수 있지 않을까? 하는 의문이 들 수 있다. 하지만, 앞 포스팅에서 말한 4가지 가정(&lt;strong&gt;선형성, 등분산성, 정규성, 독립성&lt;/strong&gt;)을 만족하는 데이터라면 가우스-마코브 이론(Gauss Marcov Theorem)에 의해 BLUE(Best Linear Unbiased Estimator)이라 할 수 있다. 쉽게 말해 가정만 지켜진다면 &lt;strong&gt;LSE로 추정하는 직선이 데이터를 최적으로 설명할 수 있는 직선&lt;/strong&gt;이라는 의미이다.&lt;/p&gt;
+&lt;h4 id=&quot;3-lse의-계산&quot;&gt;3. LSE의 계산&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;
+LSE로 최적의 직선을 만드는 B0, B1 값을 알아낼 수 있다는 것을 알았다. LSE를 이용한 B0, B1의 추정값은 다음과 같다.
+&lt;img src=&quot;assets/built/images/LinearRegression/estimatingb.jpg&quot; alt=&quot;LSE&quot; title=&quot;optional title&quot; /&gt;
+여기서 B1의 값은 최종적으로 (x,y의 공분산)/(x의 분산)이 됨을 알 수 있다. 위 식의 유도과정은 다음 포스팅에서 하겠다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Hyeyoon</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="deeplearning" />
+      
+
+      
+        <summary type="html">1. Least Square Estimation이란? Linear Regression 모델을 만든다는 것은 데이터를 잘 설명하는 선을 만드는 것이라고 앞선 포스팅에서 말하였다. 그렇다면 아래 그림의 A, B, C 에서 어던 선이 데이터를 잘 설명하는 것일까? 인간으로 봤을 때, 당연히 B라고 할 수 있다. 하지만, 컴퓨터의 입장에서 데이터를 잘 설명 한다는 기준은 어떻게 만드는 걸까? 이 때 Least Square Estimation(LSE) 개념이 나온다. 직역하자면 ‘최소 제곱법‘인데, 무엇이 최소 제곱이라는 것일까? 위의 그림에서 빨간 선(Residual)을 제곱한 값이 최소인 직선을 데이터를 제일 잘 설명하는 직선이라고 한다. 다시 말해, 관측값(데이터)과 예측값(직선 위의 값) 차이의 제곱값을 최소화하는 파라미터 (B0, B1)을 추정하는 방법을 Least Square Estimation이라고 한다. 2. LSE가 최선일까? 이 때, LSE로 추정한 직선 말고 다른 방법으로 직선을 추정할 수 있지 않을까? 하는 의문이 들 수 있다. 하지만, 앞 포스팅에서 말한 4가지 가정(선형성, 등분산성, 정규성, 독립성)을 만족하는 데이터라면 가우스-마코브 이론(Gauss Marcov Theorem)에 의해 BLUE(Best Linear Unbiased Estimator)이라 할 수 있다. 쉽게 말해 가정만 지켜진다면 LSE로 추정하는 직선이 데이터를 최적으로 설명할 수 있는 직선이라는 의미이다. 3. LSE의 계산 LSE로 최적의 직선을 만드는 B0, B1 값을 알아낼 수 있다는 것을 알았다. LSE를 이용한 B0, B1의 추정값은 다음과 같다. 여기서 B1의 값은 최종적으로 (x,y의 공분산)/(x의 분산)이 됨을 알 수 있다. 위 식의 유도과정은 다음 포스팅에서 하겠다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Linear Regression-basic</title>
       <link href="https://wasabiijelly.github.io/deeplearning-LR" rel="alternate" type="text/html" title="Linear Regression-basic" />
-      <published>2022-01-23T20:25:00+09:00</published>
-      <updated>2022-01-23T20:25:00+09:00</updated>
+      <published>2022-02-23T20:25:00+09:00</published>
+      <updated>2022-02-23T20:25:00+09:00</updated>
       <id>https://wasabiijelly.github.io/deeplearning-LR</id>
-      <content type="html" xml:base="https://wasabiijelly.github.io/deeplearning-LR">&lt;h1 id=&quot;linear-regression-선형-회귀-분석&quot;&gt;Linear Regression (선형 회귀 분석)&lt;/h1&gt;
+      <content type="html" xml:base="https://wasabiijelly.github.io/deeplearning-LR">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./deeplearning-LR&quot;&gt;ML 강좌(1) - LR 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./deeplearning-LSE&quot;&gt;ML 강좌(2) - LSE 제어문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;linear-regression-선형-회귀-분석&quot;&gt;Linear Regression (선형 회귀 분석)&lt;/h1&gt;
 
 &lt;h3 id=&quot;목차&quot;&gt;[목차]&lt;/h3&gt;
 &lt;ol&gt;
@@ -71,16 +162,22 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;이때, 주의해야 할 점은 독립 변수(x)는 &lt;strong&gt;수치형 변수 또는 범주형 변수&lt;/strong&gt;여야 하고 종속변수(y)는 &lt;strong&gt;연속형 수치변수&lt;/strong&gt;여야 한다는 점이다.&lt;/p&gt;
+&lt;p&gt;이때, 주의해야 할 점은 독립 변수(x)는 &lt;strong&gt;수치형 변수 또는 범주형 변수&lt;/strong&gt;여야 하고 종속변수(y)는 &lt;strong&gt;연속형 수치변수&lt;/strong&gt;여야 한다는 점이다. &lt;br /&gt;
+또한, 선형 회귀 모델을 쓰기 위해서 데이터가 &lt;strong&gt;선형성&lt;/strong&gt;, &lt;strong&gt;등분산성&lt;/strong&gt;, &lt;strong&gt;정규성&lt;/strong&gt;, &lt;strong&gt;독립성&lt;/strong&gt;의 4가지 가정을 만족해야 한다. 이는 다른 글에서 자세하게 다루겠다.&lt;/p&gt;
 
 &lt;h4 id=&quot;3-선형-회귀-모델의-종류&quot;&gt;3. 선형 회귀 모델의 종류&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;assets/built/images/LinearRegression/LRcategory.png&quot; alt=&quot;Linear Regression Category&quot; title=&quot;optional title&quot; /&gt;
 위의 표와 같이 &lt;strong&gt;독립변수의 갯수&lt;/strong&gt;로 선형 회귀 모델의 종류가 나뉜다.&lt;/p&gt;
 
 &lt;h4 id=&quot;4-선형-회귀-모델에서의-리니어-방정식&quot;&gt;4. 선형 회귀 모델에서의 리니어 방정식&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;assets/built/images/LinearRegression/linear_equation.png&quot; alt=&quot;Linear Regression Equation&quot; title=&quot;optional title&quot; /&gt;
+위의 식은 독립변수 x의 개수가 1개인 &lt;strong&gt;단순선형회귀&lt;/strong&gt; 일 때의 방정식을 나타낸 것이고, x 개수가 2개 이상 늘어난다면 위의 방정식에서 x의 갯수를 늘려주면 된다.&lt;/p&gt;
 
 &lt;h4 id=&quot;5-선형-회귀-모델에서의-모집단과-표본집단&quot;&gt;5. 선형 회귀 모델에서의 모집단과 표본집단&lt;/h4&gt;
-&lt;p&gt;선형 회귀 모델링의 목적은 데이터(x1,x2,x3..xk)로 y를 예측하는 선형 모델을 만든다는 것이다. 이때, 선은 어떻게 그릴까? 선이 데이터를 잘 &lt;strong&gt;대표&lt;/strong&gt;한다는 것의 의미는 무엇일까? 이에 관하여 다음 포스팅에서 LSE(Least Square Estimation)와 함께 설명하겠다.&lt;/p&gt;</content>
+&lt;p&gt;기본적으로, 우리는 데이터 분석을 통하여 &lt;strong&gt;모집단(population)&lt;/strong&gt;을 알고 싶어한다. 예를 들어, 모든 여자 몸무게의 평균(모집단) 알기 위해서 지구상의 모든 여자들의 몸무게를 구하여 평균을 낼 순 없으니 &lt;strong&gt;표본 집단(sample)&lt;/strong&gt;을 뽑아 이를 추정하는 것이다. 그렇다면 선형 회귀 모델에서 모집단과 표본집단은 어떤 모습일까? 아래 그림은 모집단과 표본집단에서 선형 회귀 방정식을 표현한 것이다. &lt;br /&gt;
+&lt;img src=&quot;assets/built/images/LinearRegression/sample_pop1.png&quot; alt=&quot;Linear Regression Equation&quot; title=&quot;optional title&quot; /&gt;
+&lt;img src=&quot;assets/built/images/LinearRegression/sample_pop2.png&quot; alt=&quot;Linear Regression Equation&quot; title=&quot;optional title&quot; /&gt;
+위의 오른쪽의 그림에서 어떤 선이 데이터를 잘 나타내고 있을까? 이에 관하여 다음 포스팅에서 LSE(Least Square Estimation)와 함께 설명하겠다.&lt;/p&gt;</content>
 
       
       
@@ -101,56 +198,7 @@
       
 
       
-        <summary type="html">Linear Regression (선형 회귀 분석)</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Deep Learning 이론</title>
-      <link href="https://wasabiijelly.github.io/deeplearning-basic" rel="alternate" type="text/html" title="Deep Learning 이론" />
-      <published>2022-01-22T17:37:00+09:00</published>
-      <updated>2022-01-22T17:37:00+09:00</updated>
-      <id>https://wasabiijelly.github.io/deeplearning-basic</id>
-      <content type="html" xml:base="https://wasabiijelly.github.io/deeplearning-basic">&lt;h2 id=&quot;이-글은-deeplearning-tag-test-글입니다&quot;&gt;이 글은 deeplearning tag test 글입니다.&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;George Washington&lt;/li&gt;
-  &lt;li&gt;John Adams&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Kim Hyeyoon&lt;/li&gt;
-  &lt;li&gt;Kim Jiyoon&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;블로그 완료&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;사실 안완료&lt;/li&gt;
-&lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Hyeyoon</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="deeplearning" />
-      
-
-      
-        <summary type="html">이 글은 deeplearning tag test 글입니다.</summary>
+        <summary type="html">Python 강좌는 여러 절로 구성되어 있습니다. ML 강좌(1) - LR 기본 ML 강좌(2) - LSE 제어문 Linear Regression (선형 회귀 분석)</summary>
       
 
       
