@@ -8,6 +8,26 @@
     
       
       <item>
+        <title>Metagenome Project - intro</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Metagenome Project는 다음과 같은 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./project-Metagenome-intro&quot;&gt;Metagenome Project - (1) Intro&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;metagenome-project&quot;&gt;Metagenome Project&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Mon, 25 Apr 2022 23:50:00 +0900</pubDate>
+        <link>
+        https://Wasabiijelly.github.io/project-Metagenome-intro</link>
+        <guid isPermaLink="true">https://Wasabiijelly.github.io/project-Metagenome-intro</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Estimating beta in Simple Linear Regression(단순선형회귀 베타 추정)</title>
         
           <description>&lt;p&gt;앞선 포스팅에서 LSE와 이를 통한 B0, B1의 계산 공식을 설명하였다.&lt;br /&gt;
@@ -55,7 +75,7 @@ LSE로 최적의 직선을 만드는 B0, B1 값을 알아낼 수 있다는 것�
       <item>
         <title>Linear Regression-basic</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Linear Regression은 다음과 같은 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./deeplearning-LR&quot;&gt;ML 강좌(1) - LR 기본&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./deeplearning-LSE&quot;&gt;ML 강좌(2) - LSE 제어문&lt;/a&gt;&lt;/li&gt;
