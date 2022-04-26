@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wasabiijelly.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wasabiijelly.github.io/" rel="alternate" type="text/html" /><updated>2022-04-26T00:26:37+09:00</updated><id>https://wasabiijelly.github.io/feed.xml</id><title type="html">Data Analysis &amp;amp; Deep Learning</title><subtitle>데이터분석 &amp; 딥러닝 에 관한 얘기들을 올려놓습니다</subtitle><entry><title type="html">Metagenome Project - intro</title><link href="https://wasabiijelly.github.io/project-Metagenome-intro" rel="alternate" type="text/html" title="Metagenome Project - intro" /><published>2022-04-25T23:50:00+09:00</published><updated>2022-04-25T23:50:00+09:00</updated><id>https://wasabiijelly.github.io/project-Metagenome-intro</id><content type="html" xml:base="https://wasabiijelly.github.io/project-Metagenome-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Metagenome Project는 다음과 같은 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://wasabiijelly.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wasabiijelly.github.io/" rel="alternate" type="text/html" /><updated>2022-04-26T23:44:40+09:00</updated><id>https://wasabiijelly.github.io/feed.xml</id><title type="html">Data Analysis &amp;amp; Deep Learning</title><subtitle>데이터분석 &amp; 딥러닝 에 관한 얘기들을 올려놓습니다</subtitle><entry><title type="html">Metagenome Project - intro</title><link href="https://wasabiijelly.github.io/project-Metagenome-intro" rel="alternate" type="text/html" title="Metagenome Project - intro" /><published>2022-04-25T23:50:00+09:00</published><updated>2022-04-25T23:50:00+09:00</updated><id>https://wasabiijelly.github.io/project-Metagenome-intro</id><content type="html" xml:base="https://wasabiijelly.github.io/project-Metagenome-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Metagenome Project는 다음과 같은 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./project-Metagenome-intro&quot;&gt;Metagenome Project - (1) Intro&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;metagenome-project&quot;&gt;Metagenome Project&lt;/h1&gt;
 
-&lt;h3 id=&quot;목차&quot;&gt;[목차]&lt;/h3&gt;
+&lt;h2 id=&quot;목차&quot;&gt;[목차]&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;Metagenome 이란?&lt;/li&gt;
   &lt;li&gt;가설 설정&lt;/li&gt;
@@ -13,10 +13,12 @@
   &lt;li&gt;프로젝트 과정&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&quot;1-metagenome-이란&quot;&gt;1. Metagenome 이란?&lt;/h4&gt;
-&lt;p&gt;위키백과에 따르면 Metagenome을 한국어로 하면 군유전체학으로서, 배양가능하지 않은 &lt;strong&gt;미생물&lt;/strong&gt; 전체를 한꺼번에 갈아서 동정한 DNA나, RNA 등을 한꺼번에 유기적으로 연구하는 체학의 한 분야를 말한다. 여기서 주목할 것은 &lt;strong&gt;미생물&lt;/strong&gt; 이다.&lt;/p&gt;
+&lt;h1 id=&quot;1-metagenome-이란&quot;&gt;1. Metagenome 이란?&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;
+Metagenome 군유전체학으로서, 배양가능하지 않은 &lt;strong&gt;미생물&lt;/strong&gt; 전체를 한꺼번에 갈아서 동정한 DNA나, RNA 등을 한꺼번에 유기적으로 연구하는 체학의 한 분야를 말합니다. 여기서 주목할 것은 &lt;strong&gt;미생물&lt;/strong&gt; 입니다.&lt;/p&gt;
 
-&lt;h4 id=&quot;2-가설-설정&quot;&gt;2. 가설 설정&lt;/h4&gt;
+&lt;h1 id=&quot;2-가설-설정&quot;&gt;2. 가설 설정&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;귀무가설(H0)&lt;/strong&gt;
     &lt;ul&gt;
@@ -30,11 +32,16 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;3-배경-지식&quot;&gt;3. 배경 지식&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;assets/built/images/LinearRegression/LRcategory.png&quot; alt=&quot;Linear Regression Category&quot; title=&quot;optional title&quot; /&gt;
-위의 표와 같이 &lt;strong&gt;독립변수의 갯수&lt;/strong&gt;로 선형 회귀 모델의 종류가 나뉜다.&lt;/p&gt;
+&lt;h1 id=&quot;3-배경-지식&quot;&gt;3. 배경 지식&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;
+이 프로젝트에서는 &lt;strong&gt;Meta data&lt;/strong&gt;와 &lt;strong&gt;OTU data&lt;/strong&gt;의 두 가지 데이터가 나옵니다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Metadata&lt;/strong&gt; 는 데이터에 대한 데이터, 즉 데이터를 설명해주는 데이터라고 할 수 있습니다. 예를 들어 샘플의 아이디, 연구 기관, sequencing한 기계, 연구 기관의 나라, 샘플의 종, 샘플의 질병 정보를 담고 있습니다.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;OTU data&lt;/strong&gt; 는 Operational Taxonomic Unit 의 줄임말로 종-속-과-목-강-문-계와 같은 분류군에 대한 데이터 입니다. 데이터 형태는 OTU data cleansing 포스트에서 확인할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h4 id=&quot;4-프로젝트-과정&quot;&gt;4. 프로젝트 과정&lt;/h4&gt;
+&lt;h1 id=&quot;4-프로젝트-과정&quot;&gt;4. 프로젝트 과정&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;assets\built\images\project\metagenome\project_pipeline.jpg&quot; alt=&quot;Metagenome into Category&quot; title=&quot;optional title&quot; width=&quot;100%&quot; height=&quot;100%&quot; /&gt;&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Metadata 클렌징&lt;/li&gt;
   &lt;li&gt;OTUdata 클렌징&lt;/li&gt;
