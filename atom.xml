@@ -8,14 +8,34 @@
     
       
       <item>
+        <title>Metagenome Project - Metadata Cleansing</title>
+        
+          <description>&lt;p&gt;```R&lt;/p&gt;
+&lt;h2 id=&quot;set-working-env&quot;&gt;Set Working Env.&lt;/h2&gt;
+&lt;p&gt;setRepositories(ind=1:8)
+WD &amp;lt;- ‘/disk3/bihy/metagenomeData’
+setwd(WD)&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 02 May 2022 22:45:00 +0900</pubDate>
+        <link>
+        https://Wasabiijelly.github.io/project-Metagenome-metacleansing</link>
+        <guid isPermaLink="true">https://Wasabiijelly.github.io/project-Metagenome-metacleansing</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Metagenome Project - intro</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Metagenome Project는 다음과 같은 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./project-Metagenome-intro&quot;&gt;Metagenome Project - (1) Intro&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;metagenome-project&quot;&gt;Metagenome Project&lt;/h1&gt;
+          <description>&lt;h4 id=&quot;목차&quot;&gt;[목차]&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Metagenome 이란?&lt;/li&gt;
+  &lt;li&gt;가설 설정&lt;/li&gt;
+  &lt;li&gt;배경 지식(질병, 미생물 종)&lt;/li&gt;
+  &lt;li&gt;프로젝트 과정&lt;/li&gt;
+&lt;/ol&gt;
 
 </description>
         
